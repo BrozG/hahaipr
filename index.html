@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LEDCS e-Sewa | Govt. of Sikkim</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a href="#home" class="brand">
+    <img src="assets/logo.png" alt="Government of Sikkim emblem">
+    <span><small>Govt. of Sikkim</small><b>IPR</b></span>
+  </a>
+  <div class="title">
+    <h1>Live Events Development Cell Sikkim (LEDCS)</h1>
+    <p>E-SEWA</p>
+  </div>
+</header>
+
+<nav class="menu">
+  <a href="#home">Home</a>
+  <a href="#about">About Us</a>
+  <a href="#dashboard">Dashboard</a>
+  <a href="#events">Live Events</a>
+  <div class="drop">
+    <a href="#how" data-group="permission">Permission ▾</a>
+    <div class="drop-list">
+      <a href="#how">How to Apply</a>
+      <a href="#rate">Rate Card</a>
+      <a href="#apply">Apply Online</a>
+    </div>
+  </div>
+  <a href="#myapp">My Application</a>
+  <a href="#database">Database</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+<!-- HOME -->
+<section id="home">
+  <div class="hero" style="background-image:url(assets/banner.jpg)">
+    <div>
+      <h2>Host your event in Sikkim</h2>
+      <p>Apply for live event and shooting permission online, all in one place.</p>
+      <a class="btn" href="#apply">Apply for Permission</a>
+    </div>
+  </div>
+  <div class="tiles">
+    <a class="tile" href="#films"><img src="assets/films.png" alt=""><h3>Films Shot in Sikkim</h3><span>Read more →</span></a>
+    <a class="tile" href="#locations"><img src="assets/paljor.png" alt=""><h3>Event Locations</h3><span>Virtual recce →</span></a>
+    <a class="tile" href="#achievements"><img src="assets/award.jpg" alt=""><h3>Achievements</h3><span>Read more →</span></a>
+  </div>
+</section>
+
+<section id="films">
+  <h2 class="page-title">Films Shot in Sikkim</h2>
+  <div class="split">
+    <img src="assets/films.png" alt="Film shoot in a Sikkim village">
+    <div>
+      <p>Sikkim's monasteries, lakes, villages and snow-clad mountains have served as locations for feature films, documentaries, web series and music videos.</p>
+      <p>The Film Facilitation Centre (FFC) helps production houses with permissions, local crew and locations.</p>
+      <a class="btn" href="#locations">Explore locations</a>
+    </div>
+  </div>
+</section>
+
+<section id="locations">
+  <div class="vr-banner" style="background-image:url(assets/vr-recce.png)"></div>
+  <h2 class="page-title">Event Locations: Virtual Location Recce</h2>
+  <p class="lead">View each venue in 360° before you travel. Save recce cost, plan efficiently and finalise before you arrive.</p>
+  <div class="filter" id="loc-filter"></div>
+  <div class="cards" id="loc-list"></div>
+</section>
+
+<section id="achievements">
+  <h2 class="page-title">Achievements</h2>
+  <div id="ach-list"></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="page-title">About Us</h2>
+  <div class="split">
+    <img src="assets/paljor.png" alt="Paljor Stadium, Gangtok">
+    <div>
+      <p>The <b>Live Events Development Cell Sikkim (LEDCS)</b> works under the Information &amp; Public Relations Department, Government of Sikkim.</p>
+      <p>It is the single point of contact for organisers of concerts, festivals, sports, cultural events, exhibitions and film shoots in the State. LEDCS coordinates with the nodal officers of every department concerned, so applicants get all clearances through one online application.</p>
+      <p>Sikkim is the recipient of the <b>Most Film Friendly State</b> award at the 67th National Film Awards.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DASHBOARD -->
+<section id="dashboard"><div id="dash"></div></section>
+
+<!-- EVENTS -->
+<section id="events">
+  <h2 class="page-title">Live Events in Sikkim</h2>
+  <p class="lead">Concerts, festivals and cultural events across the districts. Log in and buy a VR pass to watch in 360°.</p>
+  <div class="filter" id="ev-filter"></div>
+  <div class="cards" id="ev-list"></div>
+</section>
+
+<!-- PERMISSION -->
+<section id="how">
+  <p class="eyebrow">Permission Process</p>
+  <h2 class="page-title">How to Apply</h2>
+  <p class="lead">LEDCS is the point of contact for live events and filming in Sikkim. It engages with the nodal officers of the departments concerned to ease the process of permissions.</p>
+  <ol class="steps">
+    <li><b>Register</b>Register yourself on the LEDCS e-Sewa portal to start your application.</li>
+    <li><b>Fill Application Form</b>Fill out the application form seeking permission for the event or shoot in Sikkim.</li>
+    <li><b>Upload Documents</b>Upload the proposal / script, Govt. ID, crew details, locations and period of the event.</li>
+    <li><b>Pay Fees</b>Add your locations to the cart. Fees are as per the <a href="#rate">Rate Card</a>.</li>
+    <li><b>Submit</b>Submit the form yourself or through an Indian representative / line producer. Track progress under <a href="#myapp">My Application</a>.</li>
+  </ol>
+  <a class="btn" href="#apply">Apply Online</a>
+</section>
+
+<section id="rate">
+  <h2 class="page-title">Rate Card</h2>
+  <p class="lead">Permission fee per location, payable to the IPR Revenue Head. <i>(Sample rates.)</i></p>
+  <table class="grid" id="rate-table"></table>
+</section>
+
+<section id="apply"><div id="apply-body"></div></section>
+
+<section id="cart"><div id="cart-body"></div></section>
+
+<!-- MY APPLICATION -->
+<section id="myapp"><div id="myapp-body"></div></section>
+
+<!-- DATABASE -->
+<section id="database">
+  <h2 class="page-title">Database</h2>
+  <p class="lead">Local talent, crew and services available for events and shoots in Sikkim.</p>
+  <div class="tabs" id="db-tabs"></div>
+  <div id="db-body"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="page-title">Contact</h2>
+  <div class="cards">
+    <div class="card pad"><h3>Ms. Annapurna Alley</h3><p>Secretary<br>IPR Department, Government of Sikkim</p><p>📞 9775417549</p></div>
+    <div class="card pad"><h3>Mr. Bishal Khawas</h3><p>Additional Director, Film Section<br>IPR Department, Government of Sikkim</p><p>📞 9775417549</p></div>
+    <div class="card pad"><h3>Address</h3><p>Soochna Bhawan,<br>Information &amp; Public Relations Department,<br>Government of Sikkim,<br>Metro Point, 5th Mile,<br>Gangtok, Sikkim 737101</p><p>✉ ledcs@ipr.com</p></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© Information &amp; Public Relations Department, Government of Sikkim · Live Events Development Cell Sikkim</p>
+  <p class="muted">Digital system workflow prepared by Karma Lama, Data Analyst · Prototype · <a href="#" id="reset">Reset demo data</a></p>
+</footer>
+
+<div id="modal" class="modal" hidden><div class="modal-box"><button class="x" aria-label="Close">×</button><div id="modal-body"></div></div></div>
+<div id="toasts"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
