@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LEDCS e-Sewa | Govt. of Sikkim</title>
+<title>Sikkim Film Connect | E-Sewa | Govt. of Sikkim</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,8 +14,8 @@
     <span><small>Govt. of Sikkim</small><b>IPR</b></span>
   </a>
   <div class="title">
-    <h1>Live Events Development Cell Sikkim (LEDCS)</h1>
-    <p>E-SEWA</p>
+    <h1>Sikkim Film Connect</h1>
+    <p>Single Window Facilitation Portal (E-SEWA)</p>
   </div>
 </header>
 
@@ -24,11 +24,12 @@
   <a href="#about">About Us</a>
   <a href="#dashboard">Dashboard</a>
   <div class="drop">
-    <a href="#how" data-group="permission">Permission ▾</a>
+    <a href="#how" data-group="apply">Apply Online ▾</a>
     <div class="drop-list">
       <a href="#how">How to Apply</a>
-      <a href="#rate">Rate Card</a>
-      <a href="#apply">Apply Online</a>
+      <a href="#shooting">Shooting Permission</a>
+      <a href="#liveevent">Live Event Permission</a>
+      <a href="#rate">Rate Chart</a>
     </div>
   </div>
   <a href="#myapp">My Application</a>
@@ -40,24 +41,33 @@
 
 <!-- HOME -->
 <section id="home">
-  <div class="hero" style="background-image:url(assets/banner.jpg)">
+  <div class="hero" style="background-image:url(assets/sikkim.jpg)">
     <div>
-      <h2>Host your event in Sikkim</h2>
-      <p>Apply for live event and shooting permission online, all in one place.</p>
-      <a class="btn" href="#apply">Apply for Permission</a>
+      <h2>Film and host events in Sikkim</h2>
+      <p>One application. Multiple departments. Consolidated permission.</p>
+      <div class="btns"><a class="btn" href="#shooting">Shooting Permission</a><a class="btn alt" href="#liveevent">Live Event Permission</a></div>
     </div>
   </div>
   <div class="tiles">
-    <a class="tile" href="#events"><img src="assets/orchid.jpg" alt=""><h3>Events</h3><span>Watch in VR (pay per view) →</span></a>
-    <a class="tile" href="#locations"><img src="assets/paljor.png" alt=""><h3>Event Locations</h3><span>Virtual recce →</span></a>
+    <a class="tile" href="#shootlocs"><img src="assets/shooting.jpg" alt=""><h3>Shooting Locations</h3><span>Virtual recce in 360° →</span></a>
+    <a class="tile" href="#locations"><img src="assets/paljor.png" alt=""><h3>Event Locations</h3><span>Venues in 360° →</span></a>
+    <a class="tile" href="#events"><img src="assets/concert.jpg" alt=""><h3>Events</h3><span>Watch live: HD, 360° or VR →</span></a>
     <a class="tile" href="#achievements"><img src="assets/award.jpg" alt=""><h3>Achievements</h3><span>Read more →</span></a>
   </div>
 </section>
 
+<section id="shootlocs">
+  <div class="vr-banner" style="background-image:url(assets/vr-shoot.jpg)"></div>
+  <h2 class="page-title">Shooting Locations: Virtual Location Recce</h2>
+  <p class="lead">Pre-visualise your shoot in Sikkim. View each notified filming location in 360° and check access, best season and permits. Save recce cost, plan efficiently and finalise before you travel.</p>
+  <div class="filter" id="sl-filter"></div>
+  <div class="cards" id="sl-list"></div>
+</section>
+
 <section id="locations">
   <div class="vr-banner" style="background-image:url(assets/vr-recce.png)"></div>
-  <h2 class="page-title">Event Locations: Virtual Location Recce</h2>
-  <p class="lead">View each venue in 360° before you travel. Save recce cost, plan efficiently and finalise before you arrive.</p>
+  <h2 class="page-title">Event Locations</h2>
+  <p class="lead">Approved event venues with capacity and best season. View each venue in 360° before you travel. Pre-approved venues may receive expedited processing, subject to statutory and safety requirements.</p>
   <div class="filter" id="loc-filter"></div>
   <div class="cards" id="loc-list"></div>
 </section>
@@ -69,15 +79,72 @@
 
 <!-- ABOUT -->
 <section id="about">
+  <p class="eyebrow">Executive Order on Film Shooting and Live Events</p>
   <h2 class="page-title">About Us</h2>
-  <div class="split">
-    <img src="assets/paljor.png" alt="Paljor Stadium, Gangtok">
-    <div>
-      <p>The <b>Live Events Development Cell Sikkim (LEDCS)</b> works under the Information &amp; Public Relations Department, Government of Sikkim.</p>
-      <p>It is the single point of contact for organisers of concerts, festivals, sports, cultural events, exhibitions and film shoots in the State. LEDCS coordinates with the nodal officers of every department concerned, so applicants get all clearances through one online application.</p>
-      <p>Sikkim is the recipient of the <b>Most Film Friendly State</b> award at the 67th National Film Awards.</p>
-    </div>
+  <p class="lead"><b>Sikkim Film Connect</b> is the Single Window Facilitation Portal of the Sikkim Live Events and Film Shooting Facilitation Cell, under the Information &amp; Public Relations Department, Government of Sikkim. It is Sikkim's portal on the Indian Cine Hub (ICH) of the Ministry of Information &amp; Broadcasting.</p>
+  <img class="framework" src="assets/framework.jpg" alt="Framework: Ministry of Information & Broadcasting and Indian Cine Hub, Sikkim Facilitation Cell, Film Shooting and Live Event Permission, application process and data management">
+
+  <div class="about-grid">
+    <div class="card pad"><h3>Why this Executive Order</h3><ul>
+      <li>Multiple permissions from different government departments.</li>
+      <li>Fragmented approval processes and coordination challenges.</li>
+      <li>Uncertain timelines for producers and event organisers.</li>
+      <li>No unified digital facilitation mechanism.</li>
+      <li>Need for stronger safety, environmental and disaster management protocols.</li>
+      <li>Opportunity to position Sikkim as a national and international destination for films and live events.</li></ul>
+      <p><b>The need:</b> a transparent, predictable, technology-driven and investor-friendly regulatory framework.</p></div>
+    <div class="card pad"><h3>Vision and Objectives</h3><ul>
+      <li>Establish a Single Window Clearance System.</li>
+      <li>Ensure transparent and time-bound permissions.</li>
+      <li>Promote Sikkim as a preferred film shooting destination.</li>
+      <li>Attract national and international live events.</li>
+      <li>Encourage private investment and public-private partnerships.</li>
+      <li>Generate local employment and business opportunities.</li>
+      <li>Protect the environment, public safety and cultural heritage.</li>
+      <li>Strengthen inter-departmental coordination.</li></ul></div>
   </div>
+
+  <h3 class="sub">Two Sectors Covered</h3>
+  <div class="about-grid">
+    <div class="card pad"><h3>🎬 Film Shooting</h3><p>Feature films · Television programmes · Web series · Documentaries · Advertisements · Music videos · Digital content</p></div>
+    <div class="card pad"><h3>🎤 Live Events</h3><p>Concerts and music festivals · Cultural programmes · Sporting events · Adventure events · Exhibitions and conferences · Wellness festivals · Fairs and community celebrations</p></div>
+  </div>
+
+  <h3 class="sub">Institutional Framework</h3>
+  <ol class="tiers">
+    <li><b>State Level Committee</b>Chief Secretary, Chairperson. Policy guidance, monitoring and inter-departmental coordination.</li>
+    <li><b>State Nodal Department: IPR</b>Secretary, IPR, State Nodal Officer. Single-point coordination and implementation.</li>
+    <li><b>Sikkim Facilitation Cell</b>Operational secretariat and digital facilitation.</li>
+    <li><b>District-level Committees &amp; Competent Authorities</b>District Collectors, Police, Fire, Forest, Tourism and other departments.</li>
+  </ol>
+
+  <div class="about-grid">
+    <div class="card pad"><h3>Role of the IPR Department</h3><ul>
+      <li>Act as the State Nodal Department.</li>
+      <li>Administer the Single Window Clearance System.</li>
+      <li>Coordinate with all concerned government departments.</li>
+      <li>Facilitate processing of film and live event applications.</li>
+      <li>Monitor approval timelines and service delivery.</li>
+      <li>Coordinate with the Ministry of Information &amp; Broadcasting.</li>
+      <li>Facilitate integration with the Indian Cine Hub Portal.</li></ul></div>
+    <div class="card pad"><h3>The Facilitation Cell</h3><ul>
+      <li>Develop and maintain this portal.</li>
+      <li>Facilitate permissions and NOCs.</li>
+      <li>Map filming locations and event infrastructure across the State.</li>
+      <li>Maintain databases of venues, vendors and service providers.</li>
+      <li>Prepare an Annual State Event Calendar.</li>
+      <li>Develop Standard Operating Procedures and Green Event Guidelines.</li>
+      <li>Develop event safety and crowd management protocols.</li>
+      <li>Collect statistics and analyse economic impact.</li></ul></div>
+  </div>
+
+  <h3 class="sub">Defined Approval Timelines</h3>
+  <p class="muted">Maximum processing timelines under Clause 23 (working days).</p>
+  <table class="grid" id="sla-table"></table>
+  <p class="muted">Delays are recorded with reasons. Delayed applications are automatically escalated to the State Nodal Officer. Special laws governing protected and restricted areas continue to apply.</p>
+
+  <h3 class="sub">Expected Outcomes</h3>
+  <p>Faster and more transparent permissions · Improved ease of doing business · More tourism and economic activity · Employment for local communities · Opportunities for local artists and creative professionals · National and international productions and events · A stronger creative economy · Greater visibility for Sikkim.</p>
 </section>
 
 <!-- DASHBOARD -->
@@ -85,45 +152,49 @@
 
 <!-- EVENTS -->
 <section id="events">
-  <h2 class="page-title">Live Events in Sikkim</h2>
-  <p class="lead">Concerts, festivals and cultural events across the districts. Log in and buy a VR pass to watch in 360°.</p>
+  <h2 class="page-title">Events: Watch Live</h2>
+  <p class="lead">Concerts, festivals and cultural events across Sikkim. Watch live from anywhere in the world in HD, 360° or full VR.</p>
   <div class="filter" id="ev-filter"></div>
   <div class="cards" id="ev-list"></div>
 </section>
 
-<!-- PERMISSION -->
+<!-- APPLY ONLINE -->
 <section id="how">
   <p class="eyebrow">Permission Process</p>
   <h2 class="page-title">How to Apply</h2>
-  <p class="lead">LEDCS is the point of contact for live events and filming in Sikkim. It engages with the nodal officers of the departments concerned to ease the process of permissions.</p>
+  <p class="lead">The Facilitation Cell is the single point of contact for filming and live events in Sikkim. It coordinates with the nodal officers of every department concerned, so you get all clearances through one online application.</p>
   <ol class="steps">
-    <li><b>Register</b>Register yourself on the LEDCS e-Sewa portal to start your application.</li>
-    <li><b>Fill Application Form</b>Fill out the application form seeking permission for the event or shoot in Sikkim.</li>
-    <li><b>Upload Documents</b>Upload the proposal / script, Govt. ID, crew details, locations and period of the event.</li>
-    <li><b>Pay Fees</b>Add your locations to the cart. Fees are as per the <a href="#rate">Rate Card</a>.</li>
-    <li><b>Submit</b>Submit the form yourself or through an Indian representative / line producer. Track progress under <a href="#myapp">My Application</a>.</li>
+    <li><b>Select Permission</b>Choose <a href="#shooting">Shooting Permission</a> or <a href="#liveevent">Live Event Permission</a> and log in.</li>
+    <li><b>Fill in Details</b>Fill in the project or event details and upload the documents.</li>
+    <li><b>Choose Locations</b>Select one or more shooting locations, or the event venue.</li>
+    <li><b>View Fee Summary</b>The fee is calculated automatically as per the <a href="#rate">Rate Chart</a>.</li>
+    <li><b>Make Secure Payment</b>Pay by UPI, credit / debit card, net banking or wallet.</li>
+    <li><b>Receive Application No.</b>Download the acknowledgement and track progress under <a href="#myapp">My Application</a>.</li>
   </ol>
-  <a class="btn" href="#apply">Apply Online</a>
+  <div class="btns"><a class="btn" href="#shooting">Shooting Permission</a><a class="btn alt" href="#liveevent">Live Event Permission</a></div>
 </section>
+
+<section id="shooting"><div id="shooting-body"></div></section>
+<section id="liveevent"><div id="liveevent-body"></div></section>
+<section id="pay"><div id="pay-body"></div></section>
+<section id="done"><div id="done-body"></div></section>
 
 <section id="rate">
-  <h2 class="page-title">Rate Card</h2>
-  <p class="lead">Permission fee per location, payable to the IPR Revenue Head. <i>(Sample rates.)</i></p>
-  <table class="grid" id="rate-table"></table>
+  <h2 class="page-title">Rate Chart</h2>
+  <p class="lead">Fees payable to the IPR Revenue Head. <i>(Sample rates.)</i></p>
+  <h3 class="sub">Shooting Permission</h3>
+  <table class="grid" id="rate-shoot"></table>
+  <h3 class="sub">Live Event Venues</h3>
+  <table class="grid" id="rate-event"></table>
 </section>
-
-<section id="apply"><div id="apply-body"></div></section>
-
-<section id="cart"><div id="cart-body"></div></section>
 
 <!-- MY APPLICATION -->
 <section id="myapp"><div id="myapp-body"></div></section>
 
 <!-- DATABASE -->
 <section id="database">
-  <h2 class="page-title">Database</h2>
-  <p class="lead">Local talent, crew and services available for events and shoots in Sikkim.</p>
-  <div class="tabs" id="db-tabs"></div>
+  <h2 class="page-title">Database: Filmic &amp; Non-Filmic Resources</h2>
+  <p class="lead">Local talent, crew and services for shoots and events in Sikkim. Hiring from the State saves travel costs for your team.</p>
   <div id="db-body"></div>
 </section>
 
@@ -131,7 +202,7 @@
 <section id="contact">
   <h2 class="page-title">Contact</h2>
   <div class="cards">
-    <div class="card pad"><h3>Ms. Annapurna Alley</h3><p>Secretary<br>IPR Department, Government of Sikkim</p><p>📞 9775417549</p></div>
+    <div class="card pad"><h3>Ms. Annapurna Alley</h3><p>Secretary, State Nodal Officer<br>IPR Department, Government of Sikkim</p><p>📞 9775417549</p></div>
     <div class="card pad"><h3>Mr. Bishal Khawas</h3><p>Additional Director, Film Section<br>IPR Department, Government of Sikkim</p><p>📞 9775417549</p></div>
     <div class="card pad"><h3>Address</h3><p>Soochna Bhawan,<br>Information &amp; Public Relations Department,<br>Government of Sikkim,<br>Metro Point, 5th Mile,<br>Gangtok, Sikkim 737101</p><p>✉ ledcs@ipr.com</p></div>
   </div>
@@ -140,7 +211,7 @@
 </main>
 
 <footer>
-  <p>© Information &amp; Public Relations Department, Government of Sikkim · Live Events Development Cell Sikkim</p>
+  <p>© Information &amp; Public Relations Department, Government of Sikkim · Sikkim Film Connect</p>
   <p class="muted">Digital system workflow prepared by Karma Lama, Data Analyst · Prototype · <a href="#" id="reset">Reset demo data</a></p>
 </footer>
 
