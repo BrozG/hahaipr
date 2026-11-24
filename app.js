@@ -548,11 +548,12 @@ function route() {
   const id = location.hash.slice(1) || 'home';
   const page = document.getElementById(id) ? id : 'home';
   document.querySelectorAll('main > section').forEach(s => s.classList.toggle('on', s.id === page));
-  const navOf = { films: 'home', locations: 'home', achievements: 'home', rate: 'how', apply: 'how', cart: 'how' }[page] || page;
+  const navOf = { events: 'home', locations: 'home', achievements: 'home', rate: 'how', apply: 'how', cart: 'how' }[page] || page;
   document.querySelectorAll('.menu > a, .menu > .drop > a').forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + navOf));
   if (pages[page]) pages[page]();
   closeModal(); setTimeout(() => scrollTo(0, 0)); // after the browser's own jump to the #anchor
 }
 addEventListener('hashchange', route);
+addEventListener('load', () => setTimeout(() => scrollTo(0, 0), 50)); // browser jumps to the #anchor after load
 $('#reset').onclick = e => { e.preventDefault(); localStorage.removeItem(KEY); location.hash = 'home'; location.reload(); };
 route();
